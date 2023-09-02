@@ -21,7 +21,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 from restaurant import views
 
 router = DefaultRouter()
-router.register(r'tables', views.BookingViewSet)
+router.register(r'tables', views.BookingViewSet, basename='reservation')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
